@@ -26,5 +26,25 @@ public class Main {
             savingsAccount.updateBalance();
             System.out.println("Update!");
         }
+        System.out.println();
+
+        Account account4 = new Account(1005, "Alex", 1000.0);
+        account4.withdraw(200.0);
+        System.out.println(account4.getBalance());
+
+        SavingsAccount savingsAccount = new SavingsAccount(1006, "Maria", 1000.0, 0.01);
+        savingsAccount.withdraw(200.0);
+        System.out.println(savingsAccount.getBalance());
+        System.out.println();
+
+        ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+        Account account5 = new Account(1005, "Alex", 1000.0);
+        account5.withdraw(200.0);
+        System.out.println(account5.getBalance());
+
+        BusinessAccount businessAccount2 = new BusinessAccount(1006, "test", 10000.0, 100.0);
+        businessAccount2.withdraw(900.0);
+        System.out.println(businessAccount2.getBalance());
     }
 }

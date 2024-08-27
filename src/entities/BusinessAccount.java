@@ -25,4 +25,10 @@ public class BusinessAccount extends Account {
             balance += amount - 10.0;
         }
     }
+
+    @Override
+    public void withdraw(double amount) {
+        super.withdraw(amount); // vai até a classe pai e executa o método passando o valor desse método que ele está dentro
+        balance -= 2.0;
+    }
 }
